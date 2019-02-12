@@ -1,0 +1,35 @@
+body {
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+section {
+	p {
+		@include box;
+	}
+}
+
+header {
+	text-align: center;
+	a {
+		@include linkstyle;
+	}
+}
+
+nav {
+	text-align: center;
+	ul {
+		li {
+			list-style: none;
+			// display: inline-block;
+			margin: 10px;
+			@include box;
+			a {
+				@include linkstyle;
+			}//	a
+			a:hover{
+				background: black;
+				color: white;
+			}
+		}//	li
+	}//	ul
+}//	nav

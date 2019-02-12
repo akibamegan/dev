@@ -1,0 +1,36 @@
+body {
+  font-family: 'Nunito Sans', sans-serif; }
+
+section p {
+  background: white;
+  border: 2px solid black;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px; }
+
+header {
+  text-align: center; }
+  header a {
+    font-size: 2em;
+    text-decoration: none;
+    color: black; }
+
+nav {
+  text-align: center; }
+  nav ul li {
+    list-style: none;
+    margin: 10px;
+    background: white;
+    border: 2px solid black;
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px; }
+    nav ul li a {
+      font-size: 2em;
+      text-decoration: none;
+      color: black; }
+    nav ul li a:hover {
+      background: black;
+      color: white; }
+
+/*# sourceMappingURL=main.css.map */
