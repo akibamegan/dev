@@ -1,3 +1,23 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   margin: 0; }
@@ -19,26 +39,40 @@ h2 {
   padding: 40px;
   font-size: 8em; }
 
+h3 {
+  font-size: 3.5em; }
+
 section {
   text-align: center; }
-  section ul li {
-    list-style: none;
-    margin: 100px;
-    font-size: 4em;
-    background: white;
-    border: 2px solid black;
-    padding: 20px;
-    width: 500px;
-    border-radius: 10px;
+
+ul li {
+  list-style: none;
+  margin: 100px;
+  font-size: 4em;
+  background: pink;
+  border: .5px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  width: auto; }
+  ul li a:visited {
     text-decoration: none;
     color: black; }
-    section ul li a:visited {
-      text-decoration: none;
-      color: black; }
-    section ul li a {
-      text-decoration: none; }
-    section ul li a:hover {
-      background: black;
-      color: white; }
+  ul li a {
+    text-decoration: none; }
+  ul li a:hover {
+    background: black;
+    color: white; }
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  padding: 20px; }
+  footer a {
+    text-decoration: none; }
+  footer a:visited {
+    color: none; }
 
 /*# sourceMappingURL=main.css.map */
