@@ -1,35 +1,47 @@
 body {
 	font-family: 'Nunito Sans', sans-serif;
-}
-
-section {
-	p {
-		@include box;
-	}
+	margin: 0;
 }
 
 header {
+	border-style: solid;
+	border-color: white;
 	text-align: center;
-	a {
-		@include linkstyle;
-	}
+	background: pink;
 }
 
 nav {
 	text-align: center;
+}
+
+h1 {
+	// background: blue;
+	padding: 20px;
+	font-size: 7em;
+}
+
+h2 {
+	// background: pink;
+	padding: 40px;
+	font-size: 8em;
+}
+
+section{
+	text-align: center;
 	ul {
 		li {
 			list-style: none;
-			// display: inline-block;
-			margin: 10px;
+			margin: 100px;
+			font-size: 4em;
 			@include box;
+			@include linkstyle;
 			a {
-				@include linkstyle;
-			}//	a
-			a:hover{
+				text-decoration: none;
+			}
+			a:hover {
 				background: black;
 				color: white;
 			}
-		}//	li
-	}//	ul
-}//	nav
+		}
+	}
+}
