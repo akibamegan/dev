@@ -6,7 +6,7 @@
 }
 
 @mixin linkstyle{
-	// font-size: 2em;
+	font-size: 1em;
 	text-decoration: none;
 	color: black;
 	a:visited{
@@ -14,3 +14,4 @@
 		color: black;
 	}
 }
+

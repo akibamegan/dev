@@ -20,60 +20,196 @@ time, mark, audio, video {
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  margin: 0; }
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: "head head side" "main main main" "main main main" "foot foot foot"; }
 
-header {
-  border-style: solid;
-  border-color: white;
-  text-align: center;
-  background-color: #1fc8db;
-  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); }
-
-nav {
-  text-align: center;
+.head-content {
+  grid-area: head;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   padding: 15px; }
+  .head-content h1 {
+    font-size: 4em;
+    padding: 20px; }
+  .head-content h2 {
+    font-size: 3.5em;
+    padding: 15px; }
+  .head-content .responsive-link {
+    display: none; }
 
-h1 {
-  padding: 20px;
-  font-size: 7em; }
+.nav-content {
+  grid-area: side;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); }
+  .nav-content img {
+    padding: 15px; }
 
-h2 {
-  padding: 40px;
-  font-size: 8em; }
-
-h3 {
-  font-size: 3.5em; }
-
-section {
-  text-align: center; }
-
-ul li {
-  list-style: none;
-  margin: 100px;
-  font-size: 4em;
-  background: #1fc8db;
-  border: .5px solid black;
-  padding: 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
-  width: auto; }
-  ul li a:visited {
+.work-content {
+  grid-area: main;
+  padding: 15px; }
+  .work-content h2 {
+    padding-top: 10px;
+    font-size: 3em;
+    text-align: center; }
+  .work-content ul li {
+    list-style: none;
+    margin: 75px;
+    background: #1fc8db;
+    border: .5px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1em;
     text-decoration: none;
-    color: black; }
-  ul li a {
-    text-decoration: none; }
-  ul li a:hover {
-    background: black;
-    color: white; }
+    color: black;
+    width: auto; }
+    .work-content ul li a:visited {
+      text-decoration: none;
+      color: black; }
+    .work-content ul li a {
+      text-decoration: none;
+      font-size: 1.5em; }
+      .work-content ul li a div {
+        display: none; }
+    .work-content ul li a:hover {
+      background: black;
+      color: white;
+      transition: 1s; }
+      .work-content ul li a:hover div, .work-content ul li a:hover img {
+        padding: 5px;
+        display: block;
+        transition: 1s;
+        margin: auto; }
+    .work-content ul li p {
+      text-align: right; }
 
-footer {
+.footer-content {
+  grid-area: foot;
   text-align: center;
-  font-size: 2em;
   padding: 20px; }
-  footer a {
+  .footer-content a {
     text-decoration: none; }
-  footer a:visited {
+  .footer-content a:visited {
     color: none; }
+
+@media screen and (max-width: 1024px) {
+  .head-content {
+    grid-area: head;
+    background: white;
+    padding: 10px; }
+    .head-content h1 {
+      text-align: center;
+      font-size: 2em;
+      padding: 10px; }
+    .head-content h2 {
+      text-align: center;
+      font-size: 1.5em;
+      padding: 10px; }
+    .head-content .responsive-link {
+      display: inline; }
+      .head-content .responsive-link a {
+        text-decoration: none;
+        color: black; }
+
+  .nav-content {
+    grid-area: head;
+    background: white; }
+    .nav-content img {
+      display: none; }
+
+  .work-content {
+    grid-area: main;
+    padding: 10px; }
+    .work-content h2 {
+      padding-top: 8px;
+      font-size: 1.5em;
+      text-align: center; }
+    .work-content ul li {
+      list-style: none;
+      margin: 75px;
+      background: #1fc8db;
+      border: .5px solid black;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1em;
+      text-decoration: none;
+      color: black;
+      width: auto; }
+      .work-content ul li a:visited {
+        text-decoration: none;
+        color: black; }
+      .work-content ul li a {
+        text-decoration: none;
+        font-size: 1.5em; }
+        .work-content ul li a div, .work-content ul li a img {
+          display: block;
+          margin: auto;
+          padding: 5px; }
+      .work-content ul li a:hover {
+        background: black;
+        color: white; }
+        .work-content ul li a:hover div, .work-content ul li a:hover img {
+          display: block;
+          margin: auto;
+          padding: 5px; }
+      .work-content ul li p {
+        text-align: right; } }
+@media screen and (max-width: 510px) {
+  .head-content {
+    grid-area: head;
+    background: white;
+    padding: 10px; }
+    .head-content h1 {
+      text-align: center;
+      font-size: 2em;
+      padding: 10px; }
+    .head-content h2 {
+      text-align: center;
+      font-size: 1.5em;
+      padding: 10px; }
+    .head-content .responsive-link {
+      display: inline; }
+      .head-content .responsive-link a {
+        text-decoration: none;
+        color: black; }
+
+  .nav-content {
+    grid-area: head;
+    background: white; }
+    .nav-content img {
+      display: none; }
+
+  .work-content {
+    grid-area: main;
+    padding: 10px; }
+    .work-content h2 {
+      padding-top: 8px;
+      font-size: 1em;
+      text-align: center; }
+    .work-content ul li {
+      list-style: none;
+      margin: 25px;
+      background: #1fc8db;
+      border: .5px solid black;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1em;
+      text-decoration: none;
+      color: black;
+      width: auto; }
+      .work-content ul li a:visited {
+        text-decoration: none;
+        color: black; }
+      .work-content ul li a {
+        text-decoration: underline; }
+        .work-content ul li a div, .work-content ul li a img {
+          display: none; }
+      .work-content ul li a:hover {
+        background: black;
+        color: white; }
+        .work-content ul li a:hover div, .work-content ul li a:hover img {
+          display: none; }
+      .work-content ul li p {
+        text-align: right; } }
 
 /*# sourceMappingURL=main.css.map */
