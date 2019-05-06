@@ -82,6 +82,10 @@ body {
         margin: auto; }
     .work-content ul li p {
       text-align: right; }
+      .work-content ul li p #analytics {
+        text-decoration: underline;
+        font-size: 1em;
+        color: blue; }
 
 .footer-content {
   grid-area: foot;
@@ -153,7 +157,11 @@ body {
           margin: auto;
           padding: 5px; }
       .work-content ul li p {
-        text-align: right; } }
+        text-align: right; }
+        .work-content ul li p #analytics {
+          text-decoration: underline;
+          font-size: 1em;
+          color: blue; } }
 @media screen and (max-width: 510px) {
   .head-content {
     grid-area: head;

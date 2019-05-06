@@ -93,6 +93,11 @@ body {
 			}
 			p {
 				text-align: right;
+				#analytics {
+					text-decoration: underline;
+					font-size: 1em;
+					color: blue;
+				}
 			}
 		}
 	}
@@ -177,6 +182,11 @@ body {
 				}
 				p {
 					text-align: right;
+					#analytics {
+						text-decoration: underline;
+						font-size: 1em;
+						color: blue;
+					}
 				}
 			}
 		}
